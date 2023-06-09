@@ -19,7 +19,9 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+    padding: 5px;
+    background-color: rgba(174, 0, 248, 0.238);
+   
 }
 .nav-header{
     color: blueviolet;
@@ -109,7 +111,11 @@ section{
 
 
 
-
+@media(max-width:962px){
+    html{
+        font-size: 60%;
+    }
+}
 
 
 
@@ -122,7 +128,7 @@ section{
         display: none;
     }
     .container{
-        margin: 1rem 0;
+        margin: 1rem 10px;
         padding: 0;
     }
     /* nav slide */
@@ -169,12 +175,24 @@ section{
 }
 
 } 
+@media(max-width:750px){
+    html{
+        font-size: 90%;
+    }
+    
+    section{
+        flex-wrap: wrap;
+    }
+    .image-section img{
+        width: 370px;
+    }
+}
 @media(max-width:415px){
     html{
         font-size: 70%;
     }
     .container{
-        margin: 3rem 0;
+        margin: 3rem 5pxpx;
         padding: 0;
     }
     section{
@@ -207,7 +225,7 @@ section{
         font-size: 50%;
     }
     .container{
-        margin: 1rem 0;
+        margin: 1rem 5px;
         padding: 0;
     }
     .header-section button{
