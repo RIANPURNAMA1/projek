@@ -1,118 +1,150 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 
 }
-.container{
+
+.container {
     position: relative;
     margin: 2rem 5rem;
 
 
 }
-.container-section{
+
+
+
+.container-section {
     margin: 2rem 3.5rem;
 }
+
 /* navbar */
-nav{
+nav {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    right: 8rem;
+    left: 8rem;
     padding: 5px;
     background-color: rgba(174, 0, 248, 0.238);
-   
+
 }
-.nav-header{
+
+.nav-header {
     color: blueviolet;
     z-index: 99;
     font-size: 13px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 1.3rem;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: blueviolet;
     font-size: 12px;
     z-index: 9;
 }
-.icon i{
+
+nav ul li a:hover {
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+
+.icon i {
     font-size: 2rem;
     display: none;
     cursor: pointer;
     overflow: hidden;
+    color: blueviolet;
 }
-.nav-slide{
+
+.nav-slide {
     top: -800%;
     transition: 0.3s;
     display: none;
 }
-.dark{
-    background-color: black;
+
+.dark {
+    background-color: rgb(26, 22, 22);
     color: white;
     transition: 1s;
 }
+
 .darkmode {
     cursor: pointer;
     font-size: 1.5em;
-    z-index:9;
+    z-index: 9;
     overflow: hidden;
 }
+
 /* section */
-section{
+section {
     display: flex;
     justify-content: space-between;
 }
-.header-section{
-    margin-top: 7rem;
+
+.header-section {
+    margin-top: 10rem;
 }
-.header-section h1{
+
+.header-section h1 {
     margin-bottom: 0.5rem;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 60px;
     color: blueviolet;
 }
-.header-section h2{
+
+.header-section h2 {
     font-weight: 600;
     color: #1E1E1E;
 }
-.header-section p{
+
+.header-section p {
     margin-bottom: 1.5rem;
-   font-weight: 300;
+    font-weight: 300;
 }
-.header-section button{
+
+.header-section button {
     padding: 7px 10%;
-    border-radius: 5px;
+    border-radius: 2px;
     border: none;
 }
-.header-section .btn:hover{
+
+.image-section img {
+    margin-top: 5rem;
+}
+
+.header-section .btn:hover {
     transform: scale(0.9);
     transition: all 0.5s ease-in-out;
 
 }
-.header-section .btn1:hover{
-    transition: all 0.5s ease-in-out;
-    transform: scale(0.9);
-    color: #1E1E1E;
-}
-.header-section .btn{
+
+.header-section .btn {
     background-color: blueviolet;
     color: aliceblue;
-}
-.header-section .btn1{
-   border: 1px solid blueviolet;
-   color: blueviolet;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
+.header-section .btn1 {
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
 
 
-@media(max-width:962px){
-    html{
+
+@media(max-width:962px) {
+    html {
         font-size: 60%;
     }
 }
@@ -120,118 +152,170 @@ section{
 
 
 
-@media(max-width:600px){
-    html{
+@media(max-width:700px) {
+    html {
         font-size: 70%;
     }
-    nav ul li a{
+
+    nav ul li a {
         display: none;
     }
-    .container{
-        margin: 1rem 10px;
+
+    .container {
+        margin: 7rem 0px;
         padding: 0;
     }
+
     /* nav slide */
-.nav-slide ul li{
-    list-style: none;
-    text-align: center;
+    .nav-slide ul li {
+        list-style: none;
+        text-align: center;
 
-}
-.nav-slide ul {
-    line-height: 4rem;
+    }
+  
 
-}
-.nav-slide ul li a{
-    text-decoration: none;
-    color: aliceblue;
-}
+    .nav-slide ul {
+        line-height: 4rem;
+
+    }
+
+    .nav-slide ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
     .nav-slide{
-    display: block;
-    background-color: blueviolet;
-    position: absolute;
-    width: 98%;
-    margin-left: 4px;
-    border-radius: 10px;
-}
-.active{
-    top: 4rem;
-    transition: ease-in-out;
-    transition: 0.3s;
-}
-    .icon i{
-    font-size: 2rem;
-    display: block;
-}
-section{
-    flex-wrap: wrap;
-    font-size: 1.7rem;
-    margin-top: -6rem;
-}
-.icon i{
-   font-size: 3rem;
-}
-.darkmode{
-    font-size: 3rem;
+        display: block;
+        background-color: blueviolet;
+        position: absolute;
+        width: 96%;
+        position: fixed;
+        margin-top: 3rem;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+    .active {
+        top: 4rem;
+        transition: ease-in-out;
+        transition: 0.3s;
+    }
+
+    .icon i {
+        font-size: 2rem;
+        display: block;
+    }
+
+    section {
+        flex-wrap: wrap;
+        font-size: 1.7rem;
+        margin-top: -6rem;
+    }
+
+    .icon i {
+        font-size: 3rem;
+    }
+
+    .darkmode {
+        font-size: 3rem;
+    }
+
 }
 
-} 
-@media(max-width:750px){
-    html{
+@media(max-width:750px) {
+    html {
         font-size: 90%;
     }
-    
-    section{
+
+    nav {
+        width: 90%;
+        left: 2rem;
+    }
+
+    section {
         flex-wrap: wrap;
     }
-    .image-section img{
+
+    .image-section img {
         width: 370px;
     }
 }
-@media(max-width:415px){
-    html{
+
+@media(max-width:415px) {
+    html {
         font-size: 70%;
     }
-    .container{
+
+    .container {
         margin: 3rem 5pxpx;
         padding: 0;
     }
-    section{
+
+    nav {
+        left: 1rem;
+        width: 93%;
+    }
+
+    section {
         margin-left: -20px;
     }
-    .header-section p{
-         font-size: 15px;
+
+    .header-section p {
+        font-size: 15px;
     }
-    .header-section h1{
-         font-size: 50px;
+
+    .header-section h1 {
+        font-size: 50px;
     }
-  
-    .header-section button{
+
+    .header-section button {
         font-size: 11px;
         width: 150px;
     }
-    .header-section .btn{
+
+    .header-section .btn {
         height: 55px;
     }
-    .header-section .btn1{
+
+    .header-section .btn1 {
         height: 55px;
     }
-    .image-section img{
+
+    .image-section img {
         width: 340px;
     }
 
 }
-@media(max-width:376px){
-    html{
+
+@media(max-width:376px) {
+    html {
         font-size: 50%;
     }
-    .container{
+
+    .container {
         margin: 1rem 5px;
         padding: 0;
     }
-    .header-section button{
+
+    nav {
+        left: 1rem;
+        width: 93%;
+        margin-top: -1rem;
+    }
+    .nav-slide{
+     left: 0;
+     right: 2rem;
+     margin-top: 4rem;
+    }
+    section {
+        margin-top: 1rem
+    }
+
+    .header-section button {
         font-size: 10px;
     }
-    .image-section img{
+
+    .image-section img {
         width: 300px;
     }
 
